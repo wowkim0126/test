@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    background: #ccc;float: left;
+    ;
+    margin: 0 auto;
+    height: 1000px;
+}
+
+header {
+    width: 100%;float: left;
+    height: 150px;
+    background: url(images/bg-header.gif);
+    margin: 0 auto;
+}
+
+section {
+    width: 100%;
+    height: 800px;float: left;
+}
+
+footer {
+    width: 100%;float: left;
+    height: 100px;
+    background: url(images/f.gif);
+}
+
+.logo {
+    background: url(images/bg-logo.png);
+    color: white;
+    width: 200px;
+    height: 120px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    left: 350px;
+    top: 60px;
+
+}
+
+.logo h1 {
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+nav ul li {
+    float: left;margin-right: 30px;margin-top: 80px;
+    
+}
+
+nav {
+    float: left;margin-left: 600px;
+}
+
+nav ul li a {
+    background: url(images/bg-nav-right.gif);
+    display: block;
+    padding: 10px 25px;color: white;
+}
+nav ul li a:hover{
+    transition: all 2s ease-in-out;
+    background: url(images/bg-nav-right-selected.gif);
+}
+.main{
+    float: left;
+    background: url(images/great-hairstyle.jpg) no-repeat;
+    background-position: left top;
+    width: 920px;
+    height: 350px;border: 2px solid #15a39f;
+    margin-top: 50px;margin-left: 350px;
+   
+    background-color: white;overflow: hidden;
+    
+}
+.maintext h1{
+    font-size: 40px;
+}
+.maintext{
+    padding-top: 100px;
+    padding-left: 400px;
+}
+.fr1{
+    width: 220px;
+    height: 300px;float: left;
+    background: url()
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>상품 주문서 작성하기</title>
+    <style>
+    .container
+        {
+            width: 600px;
+            margin: 0 auto;
+        }
+        ul{
+            list-style-type: none;
+        }
+        label.title{
+            font-weight: bold;
+            width: 80px;
+            float: left;
+        }
+        div.centered{
+            text-align: center;
+        }
+        fieldset{
+            margin: 15px 10px;
+        }
+        fieldset legend{
+            font-weight: bold;
+            font-size: 18px;
+            color: purple;
+            
+        }
+        ul li{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>상품 주문서</h1>
+        <label for="time1">주문 마감 시간 </label><input type="text" id="time1" value="오후 06:30" readonly>
+        <form action="">
+            <fieldset>
+                <legend>개인 정보</legend>
+                <ul>
+                    <li>
+                        <label for="uname" class="title">이름</label>
+                        <input type="text" id="uname" placeholder="여백없이 입력" required autofocus>
+                    </li><li>
+                        <label for="tell" class="title">연락처</label>
+                        <input type="tel" id="tell" placeholder="연락가능한 번호">
+                    </li>
+                </ul>
+                
+            </fieldset><fieldset>
+                <legend>배송지 정보</legend>
+                <ul>
+                    <li>
+                        <label for="addr" class="title">주소</label>
+                        <input type="text" size="40" id="addr" required >
+                    </li><li>
+                        <label for="tel2" class="title">전화번호</label>
+                        <input type="tel" id="tel2" required>
+                    </li><li>
+                        <label for="comment" class="title">메모</label>
+                        <textarea name="" id="comment" cols="40" rows="3"></textarea>
+                    </li>
+                </ul>
+            </fieldset><fieldset>
+                <legend>주문 정보</legend>
+                <ul>
+                    <li>
+                        <label><input type="checkbox">과테말라 안티구아 (100g)</label>
+                        <label for=""><input type="number" value="0" min="0" max="5">개</label>
+                    </li><li>
+                        <label><input type="checkbox">인도네시아 만델링 (100g)</label>
+                        <label><input type="number" value="0" min="0" max="5">개</label>
+                    </li><li>
+                        <label><input type="checkbox">탐라는도다(블랜딩) (100g)</label>
+                        <label><input type="number" value="0" min="0" max="5">개</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="centered">
+            <input type="submit" value="주문하기">
+            <input type="reset" value="다시 작성"></div>
+        </form>
+    </div>
+    <h1>예약 정보</h1>
+    <form action="">
+        <ul>
+            <li>
+                <label for="r-name">이름</label>
+                <input type="text" id="r-name">
+            </li><li>
+                <label for="r-phone">휴대폰</label>
+                <input type="tel" id="r-phone">
+            </li><li>
+                <label for="r-email">이메일</label>
+                <input type="email" id="r-email>
+            </li><li>
+                <input type="button" value="예약하기">
+            </li>
+        </ul>
+    </form>
+</body>
+</html>

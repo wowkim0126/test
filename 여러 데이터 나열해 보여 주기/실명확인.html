@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>실명확인</title>
+    <style>
+        table {
+            width: 900px;
+            border-collapse: collapse;
+        }
+        caption{
+            text-align: right;color: #c70080;
+        }
+        tr{
+            border: 2px solid #ccc;
+        }
+        td {
+            font-size: 13px;
+        padding: 10px 20px;
+        }
+
+        td label {
+            margin-right: 30px;
+        }
+
+        th {
+            border: 2px solid #ccc;
+           padding: 10px 25px;;
+            text-align: left;
+          
+            background: #ebebeb;width:200px;
+            border-right:2px dashed #ccc;
+        }
+
+        .red {
+            color: #c70080;
+            font-size: 13px;
+        }
+
+        .tel input {
+            width: 50px;
+        }
+        .long input{
+            width: 100px;
+        }
+        .long1{
+            width: 200px;
+        }
+        h1{
+            margin: 0;
+        }
+        .bt{
+            background: #c35f92;
+            font-size: 20px;
+            padding: 10px 60px;border-radius: 10px;border: 1px solid #ccc;
+        }
+        .box1{
+            width: 900px;
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>실명확인</h1>
+
+    <table>
+       <caption>
+           *표시는 필수 입력항목입니다.
+       </caption>
+        <tr>
+            <th> 고객 유형 <span class="red">*</span></th>
+            <td>
+                <input type="radio" checked><label for="">개인</label>
+                <input type="radio"><label for="">개인사업자</label>
+                <input type="radio"><label for="">법인사업자(공공기관 포함</label>
+                <input type="radio"><label for="">외국인(Foreigner)</label>
+            </td>
+        </tr>
+        <tr>
+            <th>인증방법 <span class="red">*</span></th>
+            <td>
+                <input type="radio" checked><label for="">휴대폰 인증</label>
+                <input type="radio"><label for="">아이핀(I-Pin)인증</label>
+
+            </td>
+        </tr>
+        <tr>
+            <th>이름 <span class="red">*</span></th>
+            <td>
+                <input type="text" checked>
+
+            </td>
+        </tr>
+        <tr>
+            <th>생년월일 <span class="red">*</span></th>
+            <td>
+                <input type="date">
+            </td>
+        </tr>
+        <th>성별 <span class="red">*</span></th>
+        <td>
+            <input type="radio"><label for="">남자</label>
+            <input type="radio"><label for="">여자</label>
+
+        </td>
+      
+        <tr>
+            <th>보안문자 <span class="red">*</span></th>
+            <td class="red">
+                아래 보안문자를 정확히 입력해주세요<div class="br"></div> <input type="text" value="보안문자 입력">
+
+            </td>
+        </tr>
+        <tr>
+            <th>휴대폰 번호 <span class="red">*</span></th>
+            <td class="tel">
+                <input type="text" value="LG U+/LG U+(알뜰폰)"> <input type="text"> - <input type="text"> - <input type="text"> <span class="long"><input type="submit" value="인증번호 받기"></span><br><input type="checkbox" id="ch"><label for="ch">휴대폰으로 인증할 때 수집된 성명, 생년월일, 성별, 휴대폰 번호 등의 개인정보가 개인정보 수집 및 이용 정책에 따라 활용되는 것에 동의합니다.</label><br><input type="submit" value="개인정보수집및이용안내">
+
+
+            </td>
+        </tr>
+        <tr>
+            <th>인증번호 <span class="red">*</span></th>
+            <td>
+                <input type="text" value="인증번호 입력">
+
+            </td>
+        </tr>
+    </table>
+    <div class="box1">
+    <button type="submit" class="bt">실명 확인하기</button></div>
+</body></html>

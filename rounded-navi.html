@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>목록의 첫번째와 마지막 항목에만 스타일 적용하기</title>
+    <style>
+ 
+        .navi a:link, .navi a:visited{
+            font-size: 14px;
+            padding: 10px;
+            text-decoration: none;
+        }
+        ul.navi li:first-child{
+            border-top-left-radius: 1em;
+            border-bottom-left-radius: 1em;
+        }
+        ul.navi li:last-child{
+            border-top-right-radius: 1em;
+            border-bottom-right-radius: 1em;
+        }
+        ul>li{
+            float: left;list-style: none;
+        }
+        li{
+            border: 1px solid #000;padding: 15px
+        }
+        ul li{
+            margin: 15px;
+        }
+        li.hot::after{
+            content: "NEW!";
+            font-size: x-small;
+            padding: 2px 4px;
+            margin: 0 10px;
+            border-radius: 2px;
+            background: #f00;
+            color: #fff;
+        }
+        .navi a:hover, .navi a:focus{
+            background-color: #222;
+            color: #fff;
+        }
+        .navi a:active{
+            background-color: #f00;
+        }
+        .navi{
+            float: left;
+        }
+        input:disabled{
+            background: #ddd;
+            border: 1px #ccc solid;
+        }
+        input:checked+span{
+            color: blue;
+        }
+        form{
+            float: left;display: block;
+        }
+        .img:hover{
+            border: 5px solid #000;
+        }
+        .navi1>ul>li{
+            border: 0;
+        }
+        .navi1 a:link, .navi a:visited{
+          color: #000;
+         
+        }
+    </style>
+</head>
+<body>
+    <div>
+     <ul class="navi">
+         <li class="home"><a href="#">Home</a></li>
+         <li id="html" class="hot" href="#"><a>HTML</a></li>
+         <li id="css"><a href="#">CSS3</a></li>
+         <li id="jquery" class="hot"><a href="#">JQuery</a></li>
+         
+     </ul>
+    </div>
+    <nav class="navi">
+        <ul>
+            <li><a href="">이용 안내</a></li>
+            <li><a href="">객실 소개></a></li>
+            <li><a href="">예약 방법 및 요금</a></li>
+            <li><a href="">예약하기</a></li>
+        </ul>
+    </nav>
+    <form action="">
+        <fieldset>
+            <legend>사용자 정보</legend>
+            <label for="">이름<input type="text" disabled></label>
+        </fieldset>
+        <fieldset>
+            <legend>신청 과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요</p>
+            <label for=""><input type="radio" name="subject" value="speaking"><span>회화</span></label>
+            <label for=""><input type="radio" name="subject" value="grammer"><span>문법</span></label>
+            <label for=""><input type="radio" name="subject" value="writing"><span>작문</span></label>
+        </fieldset>
+    </form>
+    <img class="img" src="images/orange.png" alt="" width="300">
+     <nav class="navi1">
+        <ul>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴2</a></li>
+            <li><a href="">메뉴3</a></li>
+           
+        </ul>
+    </nav>
+</body>
+</html>

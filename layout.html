@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃잡기</title>
+    <style>
+        body{
+            font-size: 16;
+            margin: 0;
+            padding: 0;width: 900px;
+            box-sizing: border-box;
+            
+        }
+        h1,h2,h3,h4,h5,h6,p,ol,ul{
+            margin: 0;padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        #container{
+            border: 1px solid #000;
+            padding: 20px;margin: 0;
+            width: 900px;box-sizing: border-box;
+        }
+        header{
+            width: 900px;
+            height: 100px; box-sizing: border-box;
+            border: 1px solid #000;margin: 15px;
+            padding: 10px;padding-top: 20px; 
+        }
+        #main{
+            
+            
+            
+        }
+        #main:after{
+            display: block;
+            clear: both;
+            content: '';
+        }
+        #contents{
+            width: 600px;height: 600px;
+            box-sizing: border-box;
+            border: 1px solid #000;margin: 15px;
+            float: left;padding: 20px;
+        }
+        #right-side{
+            width: 200px;height: 600px;
+            box-sizing: border-box;
+            border: 1px solid #000;margin:15px;
+            float: right;padding: 20px;margin-right: 0px;
+        }
+        footer{
+            width: 100%;box-sizing: border-box;
+            border: 1px solid #000;padding: 20px;
+            margin: 15px;
+        }
+        .menu{
+            display: block;float: right;margin-right: 20px;
+        }
+        .menu>li>a{
+            display: block;
+            border: 1px solid #000;
+        }
+        .menu>li{
+            float: right;border: 1px solid #000;
+            padding:5px;
+        }
+        .menu:after{
+            display: block;
+            clear: both;
+            content: '';
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><h1>사이트 제목</h1>
+        <ul class="menu">
+            <a href="www.naver.com"></a><li>메뉴1</li>
+            <a href="www.naver.com"></a><li>메뉴1</li>
+            <a href="www.naver.com"></a><li>메뉴1</li>
+            <a href="www.naver.com"></a><li>메뉴1</li>
+        </ul>
+        </header>
+        <div id="main">
+            <div id="contents"><h1>본문</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent. In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.</div>
+            <div id="right-side"><h1>사이드바</h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue. Elit at imperdiet dui accumsan sit. </div>
+        </div>
+        <footer><h1>푸터</h1>In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac</footer>
+    </div>
+</body>
+</html>

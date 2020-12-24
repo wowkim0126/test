@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>정해진 시간 동안 높이와 너비 바꾸기</title>
+    <style>
+        .tr1 {
+            width: 100%;
+            height: 100%;
+            background-color: blue;
+            border: 1px solid #000;
+            transition-property: width, height;
+            transition-duration: 2s, 1s;
+            padding: 0;
+            margin: 0;
+        }
+
+        .tr1:hover {
+            width: 200px;
+            height: 120px;
+        }
+
+        .origin {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            padding: 0 10px;
+            margin: 0;
+            float: left;
+        }
+
+        .tr2 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 1px solid #000;
+            transition: 2s ease-in;
+        }
+
+        .tr2:hover {
+            width: 200px;
+            height: 200px;
+            background-color: #ff6e5f;
+            transform: rotate(180deg);
+        }
+
+        .box {
+            
+            width: 100px;height: 100px;
+            margin: 100px;
+            background: #0094ff;
+            transition: 2s ease-in;
+                 
+        }
+        .box:hover{
+            transform: scale(2) perspective(120px) rotateX(180deg);
+        }
+        .rect{
+            width: 100px;height: 100px;
+            background: green;
+            transition: background 3s;
+        }
+        .rect:hover{
+            background: yellow;
+        }
+        .pic:hover{
+            transform: scale(2);
+        }
+        .pic1:hover{
+            transform: rotate(30deg);
+            transform-origin: right top;
+        }
+        .box1{
+            width: 50px;
+            height: 50px;
+            float: left;
+            background: blue;text-align: center;color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <dir class="origin">
+        <div class="tr1"></div>
+    </dir>
+    <dir class="origin">
+        <div class="tr2"></div>
+    </dir>
+  <dir class="origin">
+        <div class="box"></div>
+    </dir>
+    <dir class="origin">
+        <div class="rect"></div>
+    </dir>
+    <div class="origin"><img src="images/rose.png" alt="장미" class="pic"></div>
+    <div class="origin"><img src="images/rose.png" alt="장미" class="pic1"></div>
+    <div class="box1">box1</div>
+</body>
+
+</html>

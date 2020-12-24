@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>강아지 용품 준비하기</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #container {
+            width: 900px;
+            height: 900px;
+           
+            margin: 0 auto;
+            padding: 0;
+            
+        }
+
+        #header {
+            width: 100%;
+            height: 200px;
+
+            background-image: url(images/apach.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-color: deeppink;
+        }
+
+        #navi {
+            float: left;
+        }
+
+        #navi ul li {
+            float: left;
+            list-style: none;
+        }
+
+        #navi>ul>li {
+            margin-top: 100px;
+        }
+
+        #navi ul li a {
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+        }
+
+        #main {
+            width: 100%;
+            height: 600px;
+          padding: 10px;        }
+
+        #contents {
+            float: left;
+            width=600px;
+            height: 600px;
+
+        }
+
+        #side {
+            float: right;
+            width: 250px;border: 2px solid green;
+            height:550px;
+            margin-top: 85px;text-align: center;padding-top: 10px;
+        }
+
+        #footer {
+            width: 100%;color: white;text-align: center;
+            height: 50px;background: black;margin-top: 50px;
+            padding: 10px;
+        }
+
+        .box {
+            width: 600px;
+            height:500px;
+           
+            position: relative;
+        }
+        .box1,.box2,.box3,.box4{
+            padding: 10px;
+        }
+        .box1 {
+            width: 290px;
+            height: 240px;
+            border: 1px solid #ccc;position: absolute;
+            top: 0;left: 0;
+        }
+
+        .box2 {
+            width: 290px;top: 0;right: 0;
+            height: 240px;
+            border: 1px solid #ccc;position: absolute;
+        }
+
+        .box3 {
+            width: 290px;bottom: 0;left: 0;
+            height: 240px;
+            border: 1px solid #ccc;position: absolute;
+        }
+
+      
+            .box4 {
+            width: 290px;
+            height: 240px;bottom: 0;right: 0;
+            border: 1px solid #ccc;position: absolute;
+        }
+        .box img{
+            display: block;width: 270px;height: 200px;
+        }
+        #side img{
+            width: 200px;height: 170px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="navi">
+                <ul>
+                    <li><a href="">애완견 종류</a></li>
+                    <li><a href="">입양하기</a></li>
+                    <li><a href="">건강돌보기</a></li>
+                    <li><a href="">더불어살기</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <div id="contents">
+                <h1>강아지 용품 준비하기</h1>
+                <div class="box">
+                    <div class="box1">강아지집
+                    <img src="images/box1.png" alt=""></div>
+                    <div class="box2">강아지 먹이<img src="images/box2.png" alt=""></div>
+                    <div class="box3">밥그릇, 물병<img src="images/box3.png" alt=""></div>
+                    <div class="box4">이름표, 목줄<img src="images/box4.png" alt=""></div>
+                </div>
+            </div>
+            <div id="side">
+                <img src="images/d1.png" alt="">
+                <img src="images/d2.png" alt="">
+                <img src="images/d3.png" alt="">
+            </div>
+        </div>
+        <div id="footer">Copyright 2020 funnycom</div>
+    </div>
+</body></html>

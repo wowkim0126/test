@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>박스모델의 레벨배치</title>
+    <style>
+      
+        div{
+            width: 200px;
+            height: 100px;
+            margin: 15px;
+            display: inline-block;
+            border-width: 2px; border-style: dashed;
+            background: #ffd800;
+            border: 2px solid;
+            
+        }
+        .box1{
+            border-color: red;
+        }
+         .box2{
+          border-color: blue;  
+        } 
+        h1{
+            padding-bottom: 5px;
+            border-bottom: 3px solid #ccc;
+        }
+        p{
+            padding: 3px; border: 3px dotted black;
+        }
+        .round{
+            border: 2px solid red;border-radius: 20px;
+        }
+        #bg{
+            background: url(images/pada.jpg) no-repeat;
+            background-size: cover;
+        }
+        .round1{
+            border-top-left-radius: 100px 50px;
+            box-shadow: 2px -2px 5px 0px black;
+            
+        }
+        .round2{
+            border-bottom-right-radius: 50% 30%;
+            box-shadow: 5px 5px 15px 5px gray;
+        }
+        .round3{
+            border-top-right-radius: 50px;
+        }
+        .circle{
+            width: 100px;height: 100;
+            border: 3px solid red;border-radius: 50%;
+        }
+        .bbox{
+            background: #0c78c8;border-radius: 20px 70px;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="box1" style="background: yellow"></div>
+    <div  class="box2" style="background: yellow"></div>
+    <h1>
+        박스 모델
+    </h1>
+    <p>박스 모델은 실제 콘텐츠 영역...............</p>
+    <div class="round"></div>
+    <div class="round" id="bg"></div>
+    <div class="round1"></div>
+    <div class="round2"></div>
+    <div class="round3"></div>
+    <div class="circle"></div><div class="bbox"></div>
+</body>
+</html>

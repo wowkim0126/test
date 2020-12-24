@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>label 태그 사용하기</title>
+    <style>
+        form{
+            float: left; border: 1px solid #ccc;
+            margin-right: 20px;padding: 5px;padding-right: 40px;
+        }
+        ul li{
+            list-style: none;
+        }
+        fieldset{
+            clear: both;width: 400px;margin: 20px;
+        }
+        fieldset input{
+            float: right;margin-right: 50px;
+        }
+        h1{
+            clear: both;margin-left: 20px;
+        }
+        fieldset label{
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h3>수강 분야(다수 선택 가능)</h3>
+        <ul>
+            <li><input type="checkbox" value="grm">문법</li>
+            <li><input type="checkbox" value="wr">작문</li>
+            <li><input type="checkbox" value="rd">독해</li>
+        </ul>
+    </form>
+    <form action="">
+        <h3>수강 과목(1과목만 선택 가능)</h3>
+        <ul>
+            <li><label><input type="radio" name="subject" value="eng">영어회화</label></li>
+            <li><label><input type="radio" name="subject" value="ch">중국어회화</label></li>
+            <li><label><input type="radio" name="subject" value="jp">일어회화</label></li>
+        </ul>
+    </form>
+    <h1>회원 가입</h1>
+    <fieldset>
+      
+        <legend>개인정보</legend>
+        <ul>
+            <li>
+                <label for="name">이름 : </label>
+                <input type="text" id="name">
+            </li>
+            <li>
+                <label for="mail">메일 주소 : </label>
+                <input type="text" id="mail">
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>로그인 정보</legend>
+        <ul>
+            <li>
+                <label for="id">아이디 : </label>
+                <input type="text" id="id">
+            </li>
+            <li>
+                <label for="pwd">비밀번호 : </label>
+                <input type="password" id="pwd">
+            </li>
+            <li>
+                <label for="pwd">비밀번호 확인 : </label>
+                <input type="password" id="pwd">
+            </li>
+        </ul>
+    </fieldset>
+</body></html>

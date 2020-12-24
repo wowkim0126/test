@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10월27일</title>
+<!--    외부 스타일지정-->
+
+
+<!--    내부 스타일지정-->
+  <script src="prefixfree.min.js"></script>
+   <style>
+       
+       #color{
+           color: olivedrab;
+       }
+       .underline{
+           text-decoration: underline;
+       }
+       #underline{
+           text-decoration: none;
+       }
+/*
+       레이아웃설정 선택자 id
+       속성설정에는 class 약속!!!!
+*/
+       선택자{
+           속성:값; 속성:값;
+       }
+
+/*       * 는 모두라는 뜻*/
+       *{
+           margin: 0;
+           padding: 0;
+       }
+       p{
+           font-size: 20px;
+           text-align: center;
+           margin: 10px;
+       }
+       body{
+           color: brown;
+       }
+
+    </style>
+</head>
+<body>
+<!--   인라인 스타일지정-->
+   <img src="images/dog.jpg" alt="강아지" width="50%" height="50%">
+    <p>텍스트의 단락을 적용하는 요소</p>
+    <p class="color">텍스트의 단락을 적용하는 요소</p>
+    <p id="color">텍스트의 단락을 적용하는 요소</p>
+    <h1>제목</h1>
+    <span id="underline">클래스 선택자</span>와 <span class="underline">id선택자</span>를 사용합니다.
+    
+</body>
+</html>

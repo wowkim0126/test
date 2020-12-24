@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: sans-serif, "돋움";
+}
+
+#container {
+    width: 980px;
+  
+    margin: 0 auto;
+}
+header{
+    width: 980px;height: 200px;
+     background: rgb(221, 102, 211);
+    background: linear-gradient(315deg, rgba(221, 102, 211, 1) 0%, rgba(252, 147, 50, 1) 50%, rgba(253, 209, 45, 1) 100%);
+}
+.title{
+    text-shadow: 3px 3px 3px white;
+    color: #d60094;text-align: center;
+    padding-top: 50px;font-size: 40px;
+}
+nav,nav ul,nav ul li{
+    float: left;
+}
+nav ul{
+    margin-left: 275px;
+}
+nav ul li a{
+    margin: 20px;
+    display: block;
+    padding: 20px;
+    color: blue;font-weight: bold;
+}
+section{
+    float: left;
+   
+}
+article{
+    border: 2px dotted #d60094;
+    float: left;margin-left: 40px;
+    width: 900px;margin-top: 30px;border-radius: 20px;
+}
+.my{
+    float: left;
+    padding: 20px;
+    width: 900px;
+    height: 250px;
+    
+    
+}
+.my h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.my ul li{
+    list-style:disc;
+    margin-left: 50px;margin-top: 10px;font-size: 20px; font-weight: bold;
+}
+.my ul{
+    margin-top: 20px;width: 100%;
+}
+table{
+   
+    border-collapse: collapse;
+    margin-top: 20px;border: green;
+}
+tr,th,td{
+    border: 2px solid green;padding: 5px; font-weight: bold;
+}
+th{
+    background: yellowgreen;color: #d60094;font-weight: bold;font-size: 20px;
+}
+figure{
+    text-align: center;
+    
+}
+figure img{
+    width:450px;
+}
+figcation{
+    text-align: center;
+}
+.ja{
+    height: 500px;
+}
+.ja p{
+    margin-top: 30px;margin-bottom: 20px;
+}
+footer{
+    background: black;
+    color: white;
+    width: 980px;
+    height: 80px;float: left;
+    margin-top: 20px;text-align: center;
+    padding-top: 25px;
+}

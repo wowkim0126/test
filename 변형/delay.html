@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>특정 시간 후에 트랜지션 실행하기</title>
+    <style>
+        #no-delay {
+            transition-duration: 3s;
+
+        }
+
+        #delay {
+            transition-duration: 3s;
+            transition-delay: 1s;
+
+        }
+
+        .box {
+            width: 60px;
+            height: 60px;
+            border: 1px solid black;
+            background: #ccc;
+            margin: 10px;
+            text-align: center;
+            vertical-align: center;font-size: 12px;
+        }
+
+        .ex {
+            width: 500px;
+            height:150px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            margin: 0 auto;
+            padding: 20px;position: relative;
+
+        }
+
+        .ex:hover #box1 {
+            transform: rotate(720deg);
+            margin-left: 440px;
+            background: red;
+            border: 3px dashed black;color: white;
+        }
+        .ex:hover #box2 {
+            transform: rotate(720deg);
+            margin-left: 440px;
+            background: blue;
+            border:3px dashed black;color: white;
+        }
+
+        #box1 {
+            transition-duration: 3s;
+            transition-property:all;
+            border: 1px solid red;
+        }
+
+        #box2 {
+            transition-duration: 3s;
+            transition-delay: 1s;border: 1px solid blue;
+        }
+        .box img{
+            width: 70%;
+        }
+        .zoom{
+            width: 300px;
+            height: 300px;
+           ;margin: 0 auto;
+            margin-top: 50px;border: 1px solid #000;text-align: center;
+          overflow: hidden;
+       
+                
+        }
+        .zoom img{
+            width: 60%;
+            margin-top: 60px;
+        }
+         .zoom1{
+            width: 300px;
+            height: 300px;
+           margin: 0 auto;
+          border: 1px solid #000;text-align: center;
+          overflow: hidden;margin-top: 40px;padding-top: 20px;
+       
+           
+        }
+       .z1{
+            width: 150%;margin-left:-70px;margin-top: -70px;
+        }
+        .zoom:hover img{
+         
+            transform: scale(2);
+           transition: all 2s;
+            transition-timing-function: ease-in-out;
+               
+        }
+       .z1:hover{
+            transform: rotate(360deg) scale(0.5);
+           transition: all 2s;
+           transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ex">
+        <div class="box" id="box1">no-delay <img src="images/smile.png" alt=""></div>
+        <div class="box" id="box2">delay 1초 <img src="images/smile.png" alt=""></div>
+    </div>
+    <div class="zoom"><img src="images/smile.png" alt="" class=""></div>
+    <div class="zoom1"><img src="images/smile.png" alt="" class="z1"></div>
+</body></html>

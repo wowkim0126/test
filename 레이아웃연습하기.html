@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃 연습</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    #container{
+        margin: 0 auto;
+        padding: 0;
+        width: 900px;
+        height: 950px;border:1px solid #ccc; 
+        
+    }
+    #header{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 300px;
+        float: left;
+        background-image: url(images/bg.png);
+        background-size:cover;position: relative;
+    }
+    .logo1{
+        color: cornsilk;font-size: 40px;position: absolute;
+        top: 90px;right: 30px;text-shadow: 2px 2px 2px black;
+    }
+    .logo2{
+        color: yellow;font-size: 40px;position: absolute;
+        top: 150px;right: 30px;text-shadow: 2px 2px 2px black;
+    }
+    #navi{
+        float: left;
+        width: 100%; height: 50px;
+        margin-top: 250px;background: black;color: white;
+    }
+    #navi ul li{
+        display: inline-block;
+    
+    }
+
+    
+    #navi ul li a{
+        padding: 30px;margin-left: 20px;
+        text-decoration: none;color: white;
+    }
+    #main{
+        width: 100%;height: 600px;border: 
+    }
+    #contents{
+        width: 670px;height: 600px;
+        float: left;padding: 10px;
+        
+    }
+    #contents p{
+        font-size: 14px;
+    }
+    #side{
+        width:220px; height: 600px;font-size: 14px;
+        background: #bdeeae;float: right;padding: 10px;
+    }
+    #side img{
+        display: block;
+        margin: 10px auto;
+    }
+    #footer{
+        width: 100%; height: 50px;
+        background: black;color: white;text-align: center;
+        clear: both;margin: auto;padding: 10px;
+    </style>
+<body>
+    <div id="container">
+        <div id="header">
+           <div class="logo1">Joandora</div>
+           <div class="logo2">가장 제주다운 수산리집</div>
+            <div id="navi">
+               
+                <ul>
+                    <li><a href="http://www.naver.com">이용 안내</a></li>
+                    <li><a href="#">객실 소개</a></li>
+                    <li><a href="#">예약 방법</a></li>
+                    <li><a href="#">예약 하기</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main">
+            <div id="contents"><h1>요안도라</h1>
+            <h4>▣ 요안도라는 게스트 하우스(Guest House) 형식의 농어촌 민박입니다.</h4>
+            <p>성산의 날씨는 다음주 내내 높은 구름에 햇살 가득이라고 합니다. 목요일이면 섭씨 27도까지 오른다고 하지만, 늘 부는 바람이 쾌적한 균형을 잡아 마당에 나가 앉아 있는 시간이 많아질듯 합니다.</p>
+            <p>오늘은 사진에 보이는 긴 돌담을 따라 들어오는 요안도레 올레 입구에 특곤색의 대문을 달았습니다.</p>
+            <p>내일은 두달 여동안 밖거리에 만든 게스트 하우스에 연백색의 황토 페인트를 칠할 예정입니다</p>
+               <p>그리고 이것저것 사소한 저이를 마치고 나면, 나이 드시고 젊고 한 미지의 새식구들을 설렘으로 만나고 함께하고, 도시의 바쁜 생활로 소원해진 오래된 친구와의 우정을 이 제주에서 새롭게 열어나가기 위해 요안도라를 세사에 알리려고 합니다.</p>
+                
+         <img src="images/f.png" alt="동백꽃" width="650px" height="200px;">
+           </div>
+            <div id="side">
+                <h3>▣ 알립니다</h3>
+                게스트하우스 예약은 전화 070-###-#### 로 직접 통화하시는게 가장 정확하고 빠릅니다. 인터넷 전화이므로 시외 전화 요금이 부과되지 않습니다.
+                <img src="images/1.png" alt="숲집" width="190px">
+                <img src="images/3.png" alt="집" width="190px">
+                <img src="images/2.png" alt="숲길" width="190px">
+            </div>
+            <div id="footer">© 1980 - 2020 Korea Ul-San Kim Chang-Hee Company</div>
+        </div>
+    </div>
+</body>
+</html>

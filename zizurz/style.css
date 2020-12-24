@@ -1,0 +1,207 @@
+* {
+
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 auto;
+}
+
+.clear{
+    clear: both;
+    content: '';
+    display: block;
+}
+#container {
+    width: 1200px;
+    clear: both;
+    background: #ccc;
+    ;
+    text-align: center;
+    margin: 0 auto;
+    height: 1850px;position: relative;
+}
+
+header {
+    width: 1200px;
+    float: left;
+    height: 150px;
+    background: url(images/bg-header.gif);
+    margin: 0 auto;
+}
+
+section {
+    width: 100%;
+    height: 800px;
+    float: left;
+    margin: 0 auto;
+}
+
+
+.logo {
+    background: url(images/bg-logo.png);
+    color: white;
+    width: 200px;
+    height: 120px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: 60px;
+}
+
+.logo h1 {
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+nav ul li {
+    float: left;
+    margin-right: 30px;
+
+}
+
+nav {
+    float: left;
+    margin-left: 350px;
+    margin-top: -90px;
+}
+
+nav ul li a {
+    background: url(images/bg-nav-right.gif);
+    display: block;
+    padding: 10px 25px;
+    color: white;
+}
+
+nav ul li a:hover {
+    transition: all 0.5s ease-in-out;
+    background:brown;
+}
+
+.main {
+    float: left;
+    background: url(images/great-hairstyle.jpg) no-repeat;
+    background-position: left top;
+    width: 910px;
+    height: 350px;
+    border: 4px solid #15a39f;
+    margin-top: 50px;
+    margin-left: 150px;
+
+    background-color: white;
+    overflow: hidden;
+
+}
+
+.maintext h1 {
+    font-size: 40px;
+}
+
+.maintext {
+    float: left;
+    padding-top: 100px;
+    padding-left: 400px;
+}
+
+.fr1 {
+    width: 220px;
+    height: 200px;
+    float: left;
+    background: url(images/frame.png);
+    margin-right: 10px;
+    padding: 5px;
+
+}
+.fr1 img{
+    opacity: 0.5;
+}
+.fr2 {
+    width: 220px;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+    margin-top: -30px;
+    text-align: left;color: brown;
+}
+.fr2 h3{
+    color: black;
+    margin-bottom: 20px;
+}
+article {
+    margin-left: 150px;
+    margin-top: 50px;
+    float: left;
+    width: 920px;
+}
+
+.side1 {
+    width: 450px;
+    height: 700px;
+    border: 4px solid #15a39f;
+    float: left;
+    background: white;
+}
+
+.side2 {
+    width: 450px;
+    height: 300px;
+    border: 4px solid #15a39f;
+    float: right;
+    background: #15a39f;color: white;
+}
+.side2 p{
+    text-align: left;
+    margin-top: 20px;line-height: 32px;padding: 20px;
+} 
+.side3 {
+    margin-top: 20px;
+    width: 450px;
+    height: 290px;
+    border: 4px solid #15a39f;
+    float: right;
+    background: #15a39f;
+}
+.side3 img{
+    width: 243px;float: left;margin-top: -10px;}
+.side3 p{
+    color: white;margin: 20px;text-align: left;
+    line-height: 30px;
+}
+footer {
+    width: 1200px;text-align: center;
+    color: white;
+  float: left;position: absolute;
+    height: 60px;padding-top: 15px;
+    bottom: 0;
+    background: url(images/bg-header.gif);
+    vertical-align:bottom;;
+}
+.logo2{
+    background: url(images/bg-logo.png);
+    color: white;
+    width: 150px;
+    height: 50px;line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+.side1 img{
+    width: 120px;float: left;
+    margin-left: 20px;margin-top: 20px;
+}
+.sidetext{
+    margin-top: 20px;float: left;margin-left:20px;
+    color: mediumvioletred;font-size: 20px;
+}
+.sidetext1{float: left;text-align: left;margin: 10px;line-height: 30px;
+    
+}
+.fr1 img:hover {
+ opacity: 1;
+    transition: all 0.5s ;
+}.side3 img:hover{
+    transform: rotate(20deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
